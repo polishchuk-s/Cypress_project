@@ -1,54 +1,53 @@
-//const { Context } = require("mocha")
+const { Context } = require("mocha")
 
-//describe("Mobile phone replenishment", () => {
+describe("Mobile phone replenishment", () => {
 
-//    context("Replenishment less than the allowed amount", () => {
-//        it("Show error: Minimum amount of the replenishment 1 UAH", () => {});
-        //it('Check min sum', () => {
-        // some test
-//    });
+   context("Replenishment less than the allowed amount", () => {
+       it("Show error: Minimum amount of the replenishment 1 UAH", () => {});
+        it('Check min sum', () => {
+        some test
+   });
 
-//}) 
+}) 
 
-/// <reference types="Cypress" />
+/ <reference types="Cypress" />
 
-// it('By ID', () => {
-//     cy.visit("https://facebook.com/")
-//     cy.get('#email')
-// });
+it('By ID', () => {
+    cy.visit("https://facebook.com/")
+    cy.get('#email')
+});
 
-// it('By Class', () => {
-//     cy.visit("https://docs.cypress.io/api/commands/get#Syntax/")
-//     cy.get('.DocSearch-Search-Icon')
-// });
+it('By Class', () => {
+    cy.visit("https://docs.cypress.io/api/commands/get#Syntax/")
+    cy.get('.DocSearch-Search-Icon')
+});
 
-// it('By Tag', () => {
-//     cy.visit("https://docs.cypress.io/api/commands/get#Syntax/")
-//     cy.get('nav')
-// });
+it('By Tag', () => {
+    cy.visit("https://docs.cypress.io/api/commands/get#Syntax/")
+    cy.get('nav')
+});
 
-// it('By Tag value', () => {
-//     cy.visit("https://facebook.com/")
-//     cy.get('[name="pass"]')
-// });
+it('By Tag value', () => {
+    cy.visit("https://facebook.com/")
+    cy.get('[name="pass"]')
+});
 
-// it('By Different tag', () => {
-//     cy.visit("https://facebook.com/")
-//     cy.get('[data-testid="open-registration-form-button"][role="button"]')
-// });
+it('By Different tag', () => {
+    cy.visit("https://facebook.com/")
+    cy.get('[data-testid="open-registration-form-button"][role="button"]')
+});
 
-// it('By Different types', () => {
-//     cy.visit("https://docs.cypress.io/api/commands/get#Syntax/")
-//     cy.get('button[type="button"][aria-label="Search"]')
-// });
+it('By Different types', () => {
+    cy.visit("https://docs.cypress.io/api/commands/get#Syntax/")
+    cy.get('button[type="button"][aria-label="Search"]')
+});
 
-// it.only('By Contains name', () => {
-//     cy.visit("https://next.privat24.ua/")
-//     cy.get('[class^="card"]')
-// });
+it.only('By Contains name', () => {
+    cy.visit("https://next.privat24.ua/")
+    cy.get('[class^="card"]')
+});
 
 
-//Comment #3
 it('Using Get With Find and Eq', () => {
     cy.visit("https://next.privat24.ua/deposit/open")
     cy.get('tbody').find('td').find('div').find('button').eq(0)
